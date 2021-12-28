@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <input type="checkbox" id="show">
+    <label for="show" class="show-btn">Sign up Form</label>
+
+    <div class="container">
+        <label for="show" class="close-btn" title="close">×</label>
+        <h1>Welcome</h1>
+        <form onsubmit ="return validateForm()">
+            <label>User Name</label>
+            <input type="text" id="uname" value="" required>
+            <span id="blankMsg" style="color: red;"> </span>
+
+            <label>Email or Phone</label>
+            <input type="text">
+
+            <label>Password</label>
+            <input type="password" id="pswd1" value="">
+            <span id = "message1" style="color:red"> </span>
+
+            <label>Confirm Password</label>
+            <input type="password" id="pswd2" value="">
+            <span id="message2" style="color: red;"> </span>
+
+            <a href="#">Forgot Password?</a>
+            <button>Submit</button>
+            <div class="link">Already a member? <a href="#">Login here</a></div>
+            
+        </form>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
 
